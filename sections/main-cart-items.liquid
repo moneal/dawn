@@ -133,7 +133,11 @@
                             </div>
                           {%- endif -%}
                         {%- endfor -%}
+                        
                       </dl>
+                      {% if item.properties['_customily-customization-url'] %}
+                        <p class="product-option"><a href="{{ item.properties['_customily-customization-url'] }}">Edit Personalization</a></p>
+                      {% endif %}
 
                       <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                     {%- endif -%}
