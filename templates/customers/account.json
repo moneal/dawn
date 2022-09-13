@@ -1,10 +1,31 @@
 {
   "sections": {
+    "16631071053bf15d70": {
+      "type": "apps",
+      "blocks": {
+        "eee94bc2-7bc2-4eda-bcf5-d544645bc086": {
+          "type": "shopify:\/\/apps\/cornelius\/blocks\/customer-orders\/24b0ac89-0020-4572-b042-03a409866b16",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "eee94bc2-7bc2-4eda-bcf5-d544645bc086"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "main": {
-      "type": "main-account"
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
+    "16631071053bf15d70",
     "main"
   ]
 }
