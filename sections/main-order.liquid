@@ -90,6 +90,9 @@
                             </span>
                           {%- endif -%}
                         {%- endfor -%}
+                        {% if line_item.properties['_customily-customization-url'] %}
+                          <span><a href="{{ line_item.properties['_customily-customization-url'] }}">Reorder</a></span>
+                        {% endif %}
                       {%- endif -%}
                     </div>
                   {%- endunless -%}
@@ -123,9 +126,6 @@
                         </span>
                     </div>
                   {%- endif -%}
-                  {% if item.properties['_customily-customization-url'] %}
-                        <p class="product-option"><a href="{{ item.properties['_customily-customization-url'] }}">Reorder</a></p>
-                  {% endif %}
                 </div>
               </td>
               <td
